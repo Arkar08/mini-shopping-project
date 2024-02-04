@@ -1,63 +1,63 @@
 const data = {
-        products:[
+    productItems:[
         {
             id:1,
             name:'Ramen',
-            Image:'./images/Ramen.jpg',
+            image:'./Public/Ramen.jpg',
             Price:100,
         },
         {
             id:2,
             name:'Blueberry-bread',
-            Image:'./images/blueberry-bread.jpg',
+            image:'./Public/blueberry-bread.jpg',
             Price:150,
         },
         {
             id:3,
             name:'Fried-egg',
-            Image:'./images/fried egg.jpg',
+            image:'./Public/fried egg.jpg',
             Price:100,
         },
         {
             id:4,
             name:'Juice',
-            Image:'./images/juice.jpg',
+            image:'./Public/juice.jpg',
             Price:70,
         },
         {
             id:5,
             name:'Pizza',
-            Image:'./images/pizza.jpg',
+            image:'./Public/pizza.jpg',
             Price:200,
         },
         {
             id:6,
             name:'Pork',
-            Image:'./images/pork.jpg',
+            image:'./Public/pork.jpg',
             Price:300,
         },
         {
             id:7,
             name:'Seafood',
-            Image:'./images/seafood.jpg',
+            image:'./Public/seafood.jpg',
             Price:200,
         },
         {
             id:8,
             name:'Shwetaung',
-            Image:'./images/shwetaung.jpg',
+            image:'./Public/shwetaung.jpg',
             Price:100,
         },
         {
             id:9,
             name:'Strawberry cake',
-            Image:'./images/strawberry cake.jpg',
+            image:'./Public/strawberry cake.jpg',
             Price:80,
         },
         {
             id:10,
             name:'ice-cream',
-            Image:'./images/ice-cream.jpg',
+            image:'./Public/ice-cream.jpg',
             Price:50,
         },
     ]
