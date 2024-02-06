@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding:10px 20px;
 }
 h2{
     font-size: 20px;
@@ -47,7 +47,7 @@ h3{
     align-items: center;
     justify-content: center;
 }
-button{
+.add{
     width: 200px;
     padding:10px;
     cursor: pointer;
@@ -58,7 +58,7 @@ button{
     font-weight: 500;
     text-transform: uppercase;
 }
-button:hover{
+.add:hover{
     transform: translateY(5px);
 }
 @media (max-width:969px) {
