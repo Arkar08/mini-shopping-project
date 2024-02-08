@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css'
 
-const Home = ({productItems , handleClick }) => {
+const Home = ({productItems}) => {
   return (
     <div className='product'>
        {
@@ -15,7 +15,7 @@ const Home = ({productItems , handleClick }) => {
                         <h3><span>$</span>{productItem.Price}</h3>
                     </div>
                     <div className="button">
-                        <button onClick={()=>handleClick(productItem)} className='add'>Add To Cart</button>
+                        <button className='add'>Add To Cart</button>
                     </div>
                 </div>
         ))
