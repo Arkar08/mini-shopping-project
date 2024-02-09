@@ -18,14 +18,11 @@ function App() {
     return setChoice([...choice ,{ ... item , quantity:1}])
   }
  }
- console.log(choice)
- 
-
 
   return (
     <Router>
-       <Header />
-       <Rout productItems={productItems}  handleClick={handleClick} choice={choice}/>
+       <Header choice={choice} />
+       <Rout productItems={productItems}  handleClick={handleClick} choice={choice} setChoice={setChoice}/>
     </Router>
   )
 }

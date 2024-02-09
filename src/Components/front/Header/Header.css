@@ -47,6 +47,9 @@ nav ul li a{
 nav ul li a:hover{
     color:orangered;
 }
+.qty{
+    color:black;
+}
 @media (max-width:768px){
     .header{
         width: 100%;

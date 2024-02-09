@@ -3,7 +3,7 @@ import {FaShoppingCart,FaBars ,FaCross } from 'react-icons/fa';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({choice}) => {
     const [isOpen , setIsOpen]  = useState(false);
   return (
     <div className='header'>

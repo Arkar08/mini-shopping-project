@@ -4,13 +4,13 @@ import Home from '../Home/Home';
 import Signup from '../Signup/Signup';
 import Cart from '../Cart/Cart';
 
-const Rout = ({productItems ,handleClick ,choice  }) => {
+const Rout = ({productItems ,handleClick ,choice ,setChoice  }) => {
   return (
     <div>
        <Routes>
         <Route path="/" element={<Home productItems={productItems} handleClick={handleClick}/>}/>
         <Route path="/signup" element={<Signup/>}/>
-        <Route path="/cart" element={<Cart choice={choice} />}/>
+        <Route path="/cart" element={<Cart choice={choice} setChoice={setChoice} />}/>
        </Routes>
     </div>
   )
