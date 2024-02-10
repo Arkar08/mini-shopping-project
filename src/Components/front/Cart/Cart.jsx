@@ -6,7 +6,6 @@ const Cart = ({ choice, setChoice }) => {
     const newChoice = choice.find((c) => {
       return c.id === item.id;
     });
-    console.log(newChoice);
     if (newChoice) {
       setChoice(
         choice.map((dat) => {
@@ -22,7 +21,6 @@ const Cart = ({ choice, setChoice }) => {
     const newChoice = choice.find((c) => {
       return c.id === item.id;
     });
-    console.log(newChoice);
     if (newChoice) {
       if (newChoice.quantity === 1) {
         return setChoice(
@@ -41,6 +39,8 @@ const Cart = ({ choice, setChoice }) => {
       }
     }
   };
+  const total = choice.reduce((c,item)=>
+    c + item.quantity *item.Price ,0)
   return (
     <div className="card-header">
       <h1>Cart-item</h1>
@@ -48,13 +48,13 @@ const Cart = ({ choice, setChoice }) => {
         <h1>No item are in the cart</h1>
       ) : (
         <div>
-          <ul>
+          <ul className="cart-nav">
             {choice &&
               choice.map((c) => {
                 return (
                   <div key={c.id} className="cart">
                     <img src={c.image} alt={c.name} className="item-image" />
-                    <h1>{c.name}</h1>
+                    <h3>{c.name}</h3>
                     <h2>
                       <span>$</span>
                       {c.Price}
@@ -74,6 +74,12 @@ const Cart = ({ choice, setChoice }) => {
                   </div>
                 );
               })}
+              <div className="total">
+                total Price
+                 <div>
+                  ${total}
+                </div>
+                </div>
           </ul>
         </div>
       )}

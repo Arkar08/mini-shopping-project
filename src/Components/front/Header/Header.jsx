@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import {FaShoppingCart,FaBars ,FaCross } from 'react-icons/fa';
+import {FaShoppingCart,FaBars  } from 'react-icons/fa';
+import { FaCircleXmark } from "react-icons/fa6";
 import './Header.css';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +13,7 @@ const Header = ({choice}) => {
         </div>
         <div className="menu" onClick={()=>setIsOpen(!isOpen)}>
              {
-                isOpen?<FaCross size={30}/>:<FaBars size={30}/>
+                isOpen?<FaCircleXmark size={30}/>:<FaBars size={30}/>
              }
         </div>
         <nav>
@@ -22,6 +23,7 @@ const Header = ({choice}) => {
                 <li>
                     <Link to='/cart'>
                     <FaShoppingCart size={25} color='white'/>
+                    <span>{choice.length=== 0 ? 0 :choice.length}</span>
                     </Link>
                     </li>
             </ul>
