@@ -1,0 +1,54 @@
+.sign-container{
+    width: 350px;
+    border: 1px solid black;
+    margin:0 auto;
+    margin-top:100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px royalblue;
+}
+.shop{
+    text-align: center;
+    color:red;
+    font-size: 30px;
+    font-weight: 600;
+    padding:20px 0px;
+}
+.input-tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label{
+    font-size: 25px;
+    font-weight: 500;
+    color: grey;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    font-size: 15px;
+    font-weight: 500;
+}
+.sign{
+    width: 200px;
+    padding: 10px;
+    margin: 30px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    color:blue;
+}
+.sign:hover{
+    color: red;
+    background-color: black;
+}
